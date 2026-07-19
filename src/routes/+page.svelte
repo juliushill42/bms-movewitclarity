@@ -65,7 +65,7 @@
   </main>
 {:else}
   <main class="relative min-h-screen bg-[#030303] text-zinc-300 p-6 font-sans">
-    <canvas bind:canvas class="fixed top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
+    <canvas bind:this={canvas} class="fixed top-0 left-0 w-full h-full pointer-events-none z-0"></canvas>
     <div class="relative z-10 max-w-md mx-auto space-y-8 flex flex-col justify-between min-h-screen">
       {#if !chatbotOpen}
         <div class="text-center space-y-4 pt-8">
