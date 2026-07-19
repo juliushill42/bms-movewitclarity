@@ -110,7 +110,7 @@
                 </div>
               {:else}
                 <div class="flex items-center border-b border-white/20 py-1">
-                  <input type={steps[currentStep].type} bind:value={currentInput} placeholder={steps[currentStep].placeholder} on:keydown={(e) => e.key === 'Enter' && processChat()} class="w-full bg-transparent text-sm text-white focus:outline-none py-1" />
+                  <input type={steps[currentStep].type} value={currentInput} on:input={(e) => currentInput = e.target.value} placeholder={steps[currentStep].placeholder} on:keydown={(e) => e.key === 'Enter' && processChat()} class="w-full bg-transparent text-sm text-white focus:outline-none py-1" />
                   <button on:click={() => processChat()} class="text-[#E6C687] text-xs font-bold uppercase ml-2">Next</button>
                 </div>
               {/if}
