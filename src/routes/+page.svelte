@@ -70,7 +70,7 @@
       {#if !chatbotOpen}
         <div class="text-center space-y-4 pt-8">
           <div class="w-32 h-32 mx-auto bg-zinc-900 border border-white/10 rounded-full flex items-center justify-center overflow-hidden">
-            <img src={data.business.logo} alt="Brand Identity" class="w-full h-full object-cover" on:error={(e) => e.target.style.display='none'} />
+             e.target.style.display='none'} />
           </div>
           <div>
             <h1 class="text-3xl font-light text-white font-serif">{data.business.name}</h1>
@@ -87,7 +87,7 @@
           <div class="grid grid-cols-1 gap-4">
             {#each data.business.projects as project}
               <div class="bg-zinc-900/40 border border-white/5 overflow-hidden">
-                <div class="h-40 bg-zinc-800"><img src={project.img} alt={project.title} class="w-full h-full object-cover opacity-80" on:error={(e) => e.target.style.display='none'} /></div>
+                <div class="h-40 bg-zinc-800"> e.target.style.display='none'} /></div>
                 <div class="p-4"><h3 class="text-white text-xs font-semibold">{project.title}</h3><p class="text-zinc-400 text-[11px] font-light mt-1">{project.desc}</p></div>
               </div>
             {/each}
